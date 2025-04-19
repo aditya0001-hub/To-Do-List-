@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#root {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    background-color: blue;
+
+}
+
+#mainHeader {
+    margin-top: 2vh;
+    font-size: 1.5rem;
+    color: white;
+}
+
+#sideNav {
+    background-color: #424242;
+    height: 100vh;
+    width: 20vw;
+    /* border: 2px solid white; */
+    overflow: hidden;
+}
+
+.navElements {
+    height: 5vh;
+    width: 20vw;
+    margin-top: 1vh;
+    display: flex;
+    padding: 1vw;
+    /* justify-content: center; */
+    align-items: center;
+    /* border: 1px solid blue; */
+    color: rgb(220, 220, 220);
+    /* opacity:0.6; */
+}
+
+.navElements:hover {
+    background-color: #3c3c3c;
+    /* opacity:0.6; */
+    color: white;
+    cursor: pointer;
+
+
+
+}
+
+#taskContainer {
+    height: 100vh;
+    width: 80vw;
+    background-color: rgb(84, 101, 114);
+    /* border: 2px solid cyan; */
+    display: grid;
+    row-gap: 5vh;
+    justify-content: center;
+
+}
+
+#taskBox {
+
+    height: 12vh;
+    width: 63vw;
+
+    background-color: #424242;
+    /* border: 2px solid white; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+#taskInput {
+    height: 6vh;
+    width: 40vw;
+    /* border: 2px solid black; */
+    background-color: #303030;
+    font-size: 1.25rem;
+    color: white;
+    padding-left: 1vw;
+    outline: none;
+    box-shadow: none;
+    border: none
+}
+
+#date {
+    height: 4vh;
+    background-color: #3971CB;
+    border: none;
+}
+
+#taskBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9rem;
+    height: 6vh;
+    width: 7vw;
+    background-color: #3971CB;
+    color: white;
+    box-shadow: none;
+    border: none;
+    cursor: pointer;
+
+
+}
+
+#taskBtn:hover {
+    background-color: #3366b8;
+}
+
+#showTasks {
+    background-color: #424242;
+    /* border: 2px solid black; */
+    height: 60vh;
+    width: 63vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    overflow: scroll;
+}
+
+.taskSet {
+    margin-top: 2vh;
+    /* border: 2px solid white; */
+    height: 10vh;
+    width: 58vw;
+    color: white;
+    display: grid;
+    grid-template-columns: 48vw 5vw 4vw ;
+    /* display: flex; */
+    /* justify-content: space-around; */
+    align-items: center;
+    font-size: 1.2rem;
+
+}
+
+#headTask {
+    margin-left: 2vh;
+    font-size: 1.5rem;
+    align-self: flex-start;
+}
+
+.delButton {
+    height: 5vh;
+    color: white;
+    width: 5vw;
+    background-color: #3366b8;
+    text-decoration: none;
+    border: none;
+}
+
+.doneButton {
+    margin-left:1vw;
+    height: 5vh;
+    color: white;
+    width: 5vw;
+    background-color: #3366b8;
+    text-decoration: none;
+    border: none;
+    
+
+}
