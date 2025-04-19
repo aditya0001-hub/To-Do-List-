@@ -5,6 +5,9 @@ let date = document.getElementById("date");
 let count = 0;
 
 addBtn.addEventListener('click', async () => {
+   if(taskInput.value===""){
+       return 0;
+ }
   count++;
   //adding checkbox
   // localStorage.setItem(count,taskInput.value)
